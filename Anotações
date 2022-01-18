@@ -1,0 +1,6 @@
+Mocks: # mockgen -destination=application/mocks/application.go -source=application/product.go application
+
+Criação do DB
+# touch sqlite.db
+# sqlite3 sqlite.db
+sqlite> create table products(id string, name string, price float, status string);
