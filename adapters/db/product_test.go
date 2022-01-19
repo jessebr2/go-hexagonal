@@ -12,7 +12,7 @@ import (
 var Db *sql.DB
 
 func setUp() {
-	Db, _ := sql.Open("sqlite3", ":memory:")
+	Db, _ = sql.Open("sqlite3", ":memory:")
 	createTable(Db)
 	createProduct(Db)
 }
